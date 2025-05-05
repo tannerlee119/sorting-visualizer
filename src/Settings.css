@@ -1,0 +1,96 @@
+.navBar {
+    width: 100%;
+    background-color: #34495e;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 150px;
+    height: 15px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+  
+  /* Mouse-over effects */
+.slider:hover {
+    opacity: 0.8; /* Fully shown on mouse-over */
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #1abc9c;
+    cursor: pointer;
+}
+  
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #1abc9c;
+    cursor: pointer;
+}
+
+
+button {
+  background-color: #1abc9c;
+  border: none;
+  color: white;
+  padding: 30px;
+  opacity: 1;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  
+
+  transition: all 0.2;
+
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  color: white;
+  background-color: #1abc9c;
+  border-color: transparent;
+  font: inherit;
+  border-radius: 6px;
+  border: none;
+  cursor:pointer;
+  padding: 1rem 2.25rem 1rem 1rem;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTAgMGw1IDUgNS01eiIvPjxwYXRoIGQ9Ik0tNy0xMGgyNHYyNEgtN3oiLz48L2c+PC9zdmc+');
+  background-repeat: no-repeat;
+  background-position: top 50% right .75rem, 0 0;
+}
+.select option {
+  list-style: none;
+  margin: 0;
+  background: #1abc9c;
+  color: #fff;
+  border-radius: 4px;
+  z-index: 1;
+  width: 96%;
+  position: absolute;
+  left: 2%;
+  top: 35%;
+}
